@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/assets/css/detail.css">
+	<link rel="stylesheet" href="/assets/css/global.css">
+	<title>Details Pokemon</title>
+</head>
+<body>
+	<nav>
+		<section >
+			<header class="header-detail">
+				<span><a href="index.html">Back</a></span>
+				<span >pokemon name</span>
+				<span><a href=""></a></span>
+			</header>
+		</section>
+	</nav>
+	<main>
+		<section class="pokemon-detail">
+			<img src="https://thumbs.dreamstime.com/b/imagem-de-fundo-bonita-do-c%C3%A9u-da-natureza-64743176.jpg" alt="pokemon-image">
+			<section>
+				<nav>
+					<a href="#about">About</a>
+					<a href="#status-detail">Stats</a>
+					<a href="#evolution">Evolution</a>
+					<a href="#moves">Moves</a>
+				</nav>
+			</section>
+			<section id="about" >
+				<p class="descript-pokemon">texto informativo sobre o pokemon</p>
+				<div >
+					<ul class="about-pokemons">
+						<li>
+							<p>Height</p>
+							<p>valor da altura</p>
+						</li>
+						<li>
+							<p>Weight</p>
+							<p>valor do peso</p>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<ol class="types">
+						tipos
+						<!-- ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')} -->
+					</ol>
+				</div>
+			</section>
+			<section id="status-detail">
+				<div class="info-details-pokemon">
+				<span role="progressbar">HP</span>
+				<progress max= "100" value = "23"></progress>
+				</div>
+				<div class="info-details-pokemon">
+				<span>Attack</span>
+				<progress max= "100" value = "23"></progress>
+				</div>
+				<div class="info-details-pokemon">
+				<span>Defense</span>
+				<progress max= "100" value = "23"></progress>
+				</div>
+				<div class="info-details-pokemon">
+				<span>Special Attack</span>
+				<progress max= "100" value = "23"></progress>
+				</div>
+				<div class="info-details-pokemon">
+				<span>Special Defense</span>
+				<progress max= "100" value = "23"></progress>
+				</div>
+				<div class="info-details-pokemon">
+				<span>Speed</span>
+				<progress max= "100" value = "23"></progress>
+				</div>
+			</section>
+		</section>
+	</main>
+	 <!-- Nosso JS -->
+	 <script src="/assets/js/pokemon-model.js"></script>
+	 <script src="/assets/js/poke-api.js"></script>
+	 <script src="/assets/js/main.js"></script>
+</body>
+</html>
